@@ -9,7 +9,6 @@ class CashRegister
         @discount = discount
         @last_transaction = []
         @items = []
-        @all_prices = 0
     end
 
     def apply_discount
@@ -32,8 +31,4 @@ class CashRegister
     def void_last_transaction
         self.total -= @last_transaction
     end
-
-    # def items
-    #     @items
-    # end
 end
